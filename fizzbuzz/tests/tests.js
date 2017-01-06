@@ -26,8 +26,8 @@ describe("Fizz Buzz tests ", function() {
     expect(fizzBuzz(63)).toBe('Fizz');
   });
 
-  it("should return `Fizz` for 63", function() {
-    expect(fizzBuzz(-63)).toBe('Fizz');
+  it("should return `Fizz` for -71", function() {
+    expect(fizzBuzz(-71)).toBe(-71);
   });
 
   it("should return 7 since its indivisible by 3 and 5", function() {

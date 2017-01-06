@@ -5,11 +5,11 @@ module.exports = {
         if (array.length == 0){
             return 0;
         } else if (array.constructor != Array){
-            return 'Only inputs of arrays are allowed';
+            return 'Only inputs of data type Array are allowed';
         }
         for (var i in array){
-            if (array[i].constructor === String ){
-                return 'Only integers are allowed in the array';
+            if (array[i].constructor != Number ){
+                return 'Only integers or floats are allowed in the array';
             }
         }
         var common_diff = array[0] - array[1];

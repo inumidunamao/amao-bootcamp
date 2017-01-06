@@ -62,5 +62,18 @@
       });
       
     });
+  
+    describe("Case for wrong data type input", function() {
+
+      it("should return `Only inputs of data type Array are allowed` for `a string`", function() {
+        expect(aritGeo('a string')).toEqual('Only inputs of data type Array are allowed');
+      });
+
+      it("should return `Only integers or floats are allowed in the array` for [1, 3, `a string`, 10, 15]", function() {
+        expect(aritGeo([1.4, 2.4, 3.4, 'a string', 5.4])).toEqual('Only integers or floats are allowed in the array');
+      });
+      
+    });
+
   });
 })();
